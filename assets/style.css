@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display:inline-flex;
+list-style-type: none;
+}
+
+nav h1{
+    margin: 0 0.5rem 
+}
+
+li{
+    margin: 0 0.5rem
+}
+
+#tool-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: aqua;
+}
+
+.hero {
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    display:flex;
+}
