@@ -1,12 +1,19 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
-    background-color:rgb(175, 99, 99);
+    background-color:rgb(255, 255, 255);
 }
 
+#quote{
+    background-color:rgb(208, 155, 155);
+    align-items: left;
+    max-width: 50%;
+    font-size: 20px;
+}
 
 nav ul {
     display:inline-flex;
@@ -15,6 +22,25 @@ list-style-type: none;
 
 nav h1{
     margin: 0 0.5rem 
+}
+
+nav a:hover, #contact-me a:hover{
+    background-size:100% 100%;
+    color:rgb(0, 0, 0);
+}
+
+nav a, #contact-me a{
+    text-decoration-color:none;
+    color:rgb(0, 0, 0);
+    background-image: linear-gradient(#eeeeee65, #ffa7a7);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: all 0.20s ease-in;
+    background-size: 100% 0.1em;
+}
+
+#work a{
+    color:rgb(255, 255, 255);
 }
 
 li{
@@ -26,11 +52,11 @@ li{
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
-    background-color:rgb(175, 99, 99);
+    background-color:rgb(97, 56, 56);
 }
 
 .hero {
-    min-height: 200px;
+    min-height: 400px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("./safar-safarov-LKsHwgzyk7c-unsplash.jpg");
@@ -44,15 +70,19 @@ section{
     padding:0 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    
 }
 
 section h2, section h3{
 margin-right: 1rem;
 min-width: 15%;
-border-right: 1px solid black;
+border-right: 5px solid black;
 text-align: center;
 padding-top: 0.5rem;
+}
+
+h1{
+    background-color:rgb(208, 155, 155);
+    font-size:40px;
 }
 
 #work ul, #contact-me ul{
@@ -65,22 +95,21 @@ padding-top: 0.5rem;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     margin: 1rem;
-  }
+    background-color:rgb(68, 64, 64);
+}
 .big{
-      flex-basis: 100%;
-     
-  }
+flex-basis: 100%;
+}
   /* Add rounded corners to the top left and the top right corner of the image */
-  .card img{
+.card img{
     border-radius: 5px 5px 0 0;
     max-height: 300px;
     max-width: 500px;
-  }
-  .big img{
+}
+.big img{
     max-width: inherit;
 }
-
